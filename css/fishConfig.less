@@ -215,9 +215,14 @@
 
 .markup {
 	.behavior() {
+		.button-Exeption();
+		.contacts-Exeption();
 		.fonts(p);
 		p { margin: 0; }
-		a { .transition(); }
+		a {
+			.transition();
+			outline: none;
+		}
 	};
 	.siteTheme(@siteConfVal, @block1, @block2, @block3, @block4) {};
 	.blockTheme(@blockBg, @text1, @text2, @text3) {
