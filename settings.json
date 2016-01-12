@@ -23,19 +23,13 @@
 		},
 		"social": {
 			"design1": { "layout": "design1", "oldDesign": "design1" },
-			"design2": { "layout": "design1", "oldDesign": "design1" },
-			"design3": { "layout": "design1", "oldDesign": "design1" },
-			"design4": { "layout": "design1", "oldDesign": "design2" },
-			"design5": { "layout": "design1", "oldDesign": "design2" },
-			"design6": { "layout": "design1", "oldDesign": "design2" },
-			"design7": { "layout": "design1", "oldDesign": "design3" },
-			"design8": { "layout": "design1", "oldDesign": "design3" },
-			"design9": { "layout": "design1", "oldDesign": "design3" }
+			"design2": { "layout": "design1", "oldDesign": "design2" },
+			"design3": { "layout": "design1", "oldDesign": "design3" }
 		},
 		"contacts": {
-			"design1": { "layout": "design1" },
+			"design1": { "layout": "design3" },
 			"design2": { "layout": "design2" },
-			"design3": { "layout": "design1" }
+			"design3": { "layout": "design3" }
 		},
 		"price": {
 			"horizontal": { "layout": "design1", "oldDesign": "horizontal" },
