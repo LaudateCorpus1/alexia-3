@@ -54,6 +54,7 @@
 
 @white: #ffffff;
 @black: #252525;
+@helpcolor: #d7d7d7;
 
 @fontCuprum: 'Cuprum', sans-serif;
 @fontOS: 'Open Sans', sans-serif;
@@ -116,6 +117,7 @@
 	font-family: @fontOS;
 	font-weight: bold;
     display: inline-block;
+	text-align: center;
 	position: relative;
     word-break: break-word;
 	margin: 2.5px;
@@ -225,6 +227,12 @@
 			}
 		}
 	}
+}
+.inputs {
+	.transition();
+	.border();
+	.fonts(p);
+    padding: 11.5px 30px 11.5px 15px ;
 }
 .widget_title() {
 	.fonts(h3);
