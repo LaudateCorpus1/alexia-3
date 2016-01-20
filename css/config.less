@@ -56,6 +56,7 @@
 @black: #252525;
 @helpcolor: #d7d7d7;
 
+
 @fontCuprum: 'Cuprum', sans-serif;
 @fontOS: 'Open Sans', sans-serif;
 @fontSizeH1: 30px;	@fontLineH1: 45px;
@@ -253,24 +254,29 @@
 	-ms-transform:    @string;
 	-o-transform:    @string;
 }
-.pagination {
+.pagination(@width,@height,@margin) {
 	.transition;
-	width: 16px;
-	height: 16px;
-	margin: 7px;
+	.border();
+	display: inline-block;
+	vertical-align: middle;
+	width: @width;
+	height: @height;
+	margin: @margin;
 	cursor: pointer;
-	border: 2px solid;
-}
-.pagination_color(@text2) {
-	background: transparent;
-	border-color: @text2;
-	&:hover {
-		background: lighten(@text2, 10%);
-		border-color: lighten(@text2, 10%);
-	}
+	border-radius: 0 !important;
+	&:hover { .transform(scale(2)); }
+	&:active { opacity: 0.5; }
 	&.active {
-		background: @text2;
-		&:hover { border-color: @text2; }
+		.transform(scale(2));
+		&:active { opacity: 0.5; }
+	}
+}
+.pagination_color(@color) {
+	background-color: @color;
+	border-color: @white !important;
+	&.active {
+		background-color: @white;
+		border-color: @black !important;
 	}
 }
 .fa {
